@@ -1,5 +1,3 @@
-# Ouistart
+# Ouimodals
 
-- `npm i`
-- `npm start`
-- `npm run watch`
+Beautiful modals you can use!

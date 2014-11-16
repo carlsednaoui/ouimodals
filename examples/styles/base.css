@@ -1,0 +1,8 @@
+/**
+ base styles
+ */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #354b60;
+  -webkit-font-smoothing: antialiased;
+}

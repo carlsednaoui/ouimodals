@@ -17,7 +17,7 @@ gulp tasks list
 gulp.task('content', function(){
   gulp.src('source/content/*.jade')
     .pipe(jade({ pretty: true }))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('examples'));
 });
 
 
@@ -25,22 +25,22 @@ gulp.task('styles', function() {
   gulp.src('source/styles/**/*.styl')
     .pipe(stylus({errors: true}))
     .pipe(prefix())
-    .pipe(gulp.dest('public/styles'));
+    .pipe(gulp.dest('examples/styles'));
 
   gulp.src('source/styles/lib/*.css')
-    .pipe(gulp.dest('public/styles/lib'));
+    .pipe(gulp.dest('examples/styles/lib'));
 });
 
 
 gulp.task('scripts', function() {
   gulp.src('source/scripts/**/*.js')
-    .pipe(gulp.dest('public/scripts'));
+    .pipe(gulp.dest('examples/scripts'));
 });
 
 
 gulp.task('images', function() {
   gulp.src('source/images/*')
-    .pipe(gulp.dest('public/images'));
+    .pipe(gulp.dest('examples/images'));
 });
 
 
